@@ -66,6 +66,8 @@
   }
 }
 
+
+
 @layer base {
   * {
     @apply border-border;
@@ -377,4 +379,15 @@
   font-size: 16px;
   font-weight: 600;
   color: #384262;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: none;
 }

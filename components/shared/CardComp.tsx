@@ -2,26 +2,59 @@
 import { Card } from "@/components/ui/card";
 import SingleCard from "./SingleCard";
 import { useQuery } from "@tanstack/react-query";
+import React, { useState, useEffect } from "react";
+import { Skeleton } from "@/components/ui/skeleton";
+import { motion } from "framer-motion";
 
 const CardComp = () => {
   const { data, isLoading, isSuccess, isError } = useQuery<any>({
     queryKey: ["todos"],
     queryFn: () => fetch("/api/card").then((res) => res.json()),
   });
-
+  const one = "378CE7";
+  const two = "4CCD99";
+  const three = "FFC700";
+  const four = "FFF455";
   console.log(data);
-  const one = "59D5E0";
-  const two = "F5DD61";
-  const three = "FAA300";
-  const four = "F4538A";
   return (
-    <div>
-      {data?.map((item: any) => (
+    <div className="grid grid-cols-1 gap-6  sm:grid-cols-2 xl:grid-cols-3">
+      {data?.map((card: any) => (
         <Card
-          key={item.id}
-          className="w-[250px] h-[220px] rounded border-stone-200"
+          key={card.id}
+          className="w-[250px] h-[220px] mb-10 rounded border-stone-200"
         >
-          <SingleCard height={24} color="007F73" loading={true} />
+          <div
+            style={{ backgroundColor: `#${card.one}` }}
+            className={`h-24 relative`}
+          >
+            <div className="opacity-0 absolute top-0 left-0 text-[#f8fafc] p-2 transition-opacity duration-300 hover:opacity-100">
+              {card.one}
+            </div>
+          </div>
+          <div
+            style={{ backgroundColor: `#${card.two}` }}
+            className={`h-20 relative`}
+          >
+            <div className="opacity-0 absolute top-0 left-0 text-[#f8fafc] p-2 transition-opacity duration-300 hover:opacity-100">
+              {card.two}
+            </div>
+          </div>
+          <div
+            style={{ backgroundColor: `#${card.three}` }}
+            className={`h-16 relative`}
+          >
+            <div className="opacity-0 absolute top-0 left-0 text-[#f8fafc] p-2 transition-opacity duration-300 hover:opacity-100">
+              {card.three}
+            </div>
+          </div>
+          <div
+            style={{ backgroundColor: `#${card.four}` }}
+            className={`h-12 relative`}
+          >
+            <div className="opacity-0 absolute top-0 left-0 text-[#f8fafc] p-2 transition-opacity duration-300 hover:opacity-100">
+              {card.four}
+            </div>
+          </div>
         </Card>
       ))}
     </div>
