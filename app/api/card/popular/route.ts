@@ -7,7 +7,7 @@ import { NextResponse } from "next/server";
 export async function GET(req: NextApiRequest) {
     try {
         await connectToDatabase();
-        const cardData = await Card.find().limit(4);
+        const cardData = await Card.find({ type: "Popular" });
         return NextResponse.json(cardData);
 
     } catch (error) {

@@ -1,7 +1,9 @@
+import PopularComp from "@/components/shared/PopularComp";
+
 const page = () => {
   return (
     <div>
-      <h1>Popular</h1>
+      <PopularComp />
     </div>
   );
 };

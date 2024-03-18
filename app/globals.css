@@ -391,3 +391,10 @@
 * {
   scrollbar-width: none;
 }
+
+.copyright {
+  background: #CF7738;
+background: linear-gradient(to right, #CF7738 45%, #CF2D10 100%);
+background-clip: text;
+-webkit-text-fill-color: transparent;
+}

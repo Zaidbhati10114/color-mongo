@@ -1,6 +1,7 @@
 "use client";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { navLinks } from "@/constants";
+import { Github, Instagram, Linkedin } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -67,6 +68,28 @@ const MobileNav = () => {
                   );
                 })}
               </ul>
+              <div className="grid ml-10 gap-4 grid-flow-col justify-stretch">
+                <Link
+                  href="https://github.com/Zaidbhati10114"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Github className="w-7 h-7" />
+                </Link>
+                <Link
+                  href="https://www.linkedin.com/in/zaid-bhati-427a79192/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Linkedin className="w-7 h-7" />
+                </Link>
+                <Link href="/" target="_blank">
+                  <Instagram className="w-7 h-7" />
+                </Link>
+              </div>
+              <span className="flex-center text-base ml-3 copyright  gap-2">
+                Developed By Zaid Bhati © 2023
+              </span>
             </>
           </SheetContent>
         </Sheet>

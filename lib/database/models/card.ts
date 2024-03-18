@@ -5,6 +5,7 @@ export interface Card {
     two: string;
     three: string;
     four: string;
+    type: 'popular' | 'regular' | 'new';
 }
 
 const CardSchema = new Schema<Card>({
@@ -12,6 +13,7 @@ const CardSchema = new Schema<Card>({
     two: { type: String, required: true },
     three: { type: String, required: true },
     four: { type: String, required: true },
+    type: { type: String, enum: ['popular', 'regular', 'new'] }
 });
 
 export const Card = mongoose.models.Card || mongoose.model<Card>("Card", CardSchema)

@@ -1,86 +1,143 @@
 "use client";
 import { Card } from "@/components/ui/card";
-import SingleCard from "./SingleCard";
 import { useQuery } from "@tanstack/react-query";
-import React, { useState, useEffect } from "react";
-import { Skeleton } from "@/components/ui/skeleton";
+import React, { useEffect, useState } from "react";
+import { Skeleton } from "../ui/skeleton";
+import { PaginationDemo } from "./PaginationDemo";
 import { motion } from "framer-motion";
 
-const CardComp = () => {
-  const { data, isLoading, isSuccess, isError } = useQuery<any>({
-    queryKey: ["todos"],
-    queryFn: () => fetch("/api/card").then((res) => res.json()),
-  });
-  const one = "378CE7";
-  const two = "4CCD99";
-  const three = "FFC700";
-  const four = "FFF455";
-  console.log(data);
-  return (
-    <div className="grid grid-cols-1 gap-6  sm:grid-cols-2 xl:grid-cols-3">
-      {data?.map((card: any) => (
-        <Card
-          key={card.id}
-          className="w-[250px] h-[220px] mb-10 rounded border-stone-200"
-        >
-          <div
-            style={{ backgroundColor: `#${card.one}` }}
-            className={`h-24 relative`}
-          >
-            <div className="opacity-0 absolute top-0 left-0 text-[#f8fafc] p-2 transition-opacity duration-300 hover:opacity-100">
-              {card.one}
-            </div>
-          </div>
-          <div
-            style={{ backgroundColor: `#${card.two}` }}
-            className={`h-20 relative`}
-          >
-            <div className="opacity-0 absolute top-0 left-0 text-[#f8fafc] p-2 transition-opacity duration-300 hover:opacity-100">
-              {card.two}
-            </div>
-          </div>
-          <div
-            style={{ backgroundColor: `#${card.three}` }}
-            className={`h-16 relative`}
-          >
-            <div className="opacity-0 absolute top-0 left-0 text-[#f8fafc] p-2 transition-opacity duration-300 hover:opacity-100">
-              {card.three}
-            </div>
-          </div>
-          <div
-            style={{ backgroundColor: `#${card.four}` }}
-            className={`h-12 relative`}
-          >
-            <div className="opacity-0 absolute top-0 left-0 text-[#f8fafc] p-2 transition-opacity duration-300 hover:opacity-100">
-              {card.four}
-            </div>
-          </div>
-        </Card>
-      ))}
-    </div>
-  );
-};
-export default CardComp;
-
-{
-  /* <div>
-      {data?.map((item:any) => (
-        <div key={item._id}>
-          <h1>one: {item.one}</h1>
-          <h1>two: {item.two}</h1>
-          <h1>three: {item.three}</h1>
-          <h1>four: {item.four}</h1>
-        </div>
-      ))}
-    </div> */
+interface CardData {
+  _id: string;
+  one: string;
+  two: string;
+  three: string;
+  four: string;
 }
 
-// <Card className="w-[250px] h-[220px] rounded border-stone-200">
-//   <SingleCard height={24} color="007F73" loading={true} />
-//   <SingleCard height={20} color={two} loading={true} />
-//   <SingleCard height={16} color={three} loading={true} />
-//   <SingleCard height={12} color={four} loading={true} />
+interface CardIdPageProps {
+  data: CardData[];
+  page: number;
+  limit: number;
+}
 
-// </Card>
+const CardComp: React.FC<CardIdPageProps> = ({ data, page, limit }) => {
+  const [loading, setLoading] = useState(true);
+
+  const [copied, setCopied] = useState(false);
+
+  const copyToClipboard = (text: string) => {
+    navigator.clipboard.writeText(text);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 1000);
+  };
+
+  useEffect(() => {
+    // Show loading state for 500 milliseconds
+    const timeoutId = setTimeout(() => {
+      setLoading(false);
+    }, 500);
+
+    // Cleanup the timeout when the component unmounts
+    return () => clearTimeout(timeoutId);
+  }, []);
+
+  return (
+    <>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-3">
+          {data?.map((card: any) => (
+            <div className="pt-5" key={card._id}>
+              <a href={copied ? `javascript:void(0)` : `/card/${card._id}`}>
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  <Card
+                    key={card.id}
+                    className="w-[250px] h-[220px] mb-10  rounded border-stone-200"
+                  >
+                    {loading ? (
+                      <Skeleton className={`h-24`} />
+                    ) : (
+                      <div
+                        style={{ backgroundColor: `#${card.one}` }}
+                        className={`h-24 relative`}
+                      >
+                        <div
+                          className="opacity-0 absolute cursor-pointer top-0 left-0 font-extrabold text-[#f8fafc] p-2 transition-opacity duration-300 hover:opacity-100"
+                          onClick={() => copyToClipboard(card.one)}
+                        >
+                          {copied ? "Copied" : card.one}
+                        </div>
+                      </div>
+                    )}
+                    {loading ? (
+                      <Skeleton className={`h-20`} />
+                    ) : (
+                      <div
+                        style={{ backgroundColor: `#${card.two}` }}
+                        className={`h-20 relative`}
+                      >
+                        <div
+                          className="opacity-0 absolute cursor-pointer top-0 left-0 font-extrabold text-[#f8fafc] p-2 transition-opacity duration-300 hover:opacity-100"
+                          onClick={() => copyToClipboard(card.two)}
+                        >
+                          {copied ? "Copied" : card.two}
+                        </div>
+                      </div>
+                    )}
+                    {loading ? (
+                      <Skeleton className={`h-16`} />
+                    ) : (
+                      <div
+                        style={{ backgroundColor: `#${card.three}` }}
+                        className={`h-16 relative`}
+                      >
+                        <div
+                          className="opacity-0 absolute cursor-pointer top-0 left-0 font-extrabold text-[#f8fafc] p-2 transition-opacity duration-300 hover:opacity-100"
+                          onClick={() => copyToClipboard(card.three)}
+                        >
+                          {copied ? "Copied" : card.three}
+                        </div>
+                      </div>
+                    )}
+                    {loading ? (
+                      <Skeleton className={`h-12`} />
+                    ) : (
+                      <div
+                        style={{
+                          backgroundColor: `#${card.four}`,
+                          marginBottom: "12px",
+                        }}
+                        className={`h-12 mb-10 relative`}
+                      >
+                        <div
+                          className="opacity-0 absolute cursor-pointer top-0 left-0 font-extrabold text-[#f8fafc] p-2 transition-opacity duration-300 hover:opacity-100"
+                          onClick={() => copyToClipboard(card.four)}
+                        >
+                          {copied ? "Copied" : card.four}
+                        </div>
+                      </div>
+                    )}
+                  </Card>
+                </motion.div>
+              </a>
+            </div>
+          ))}
+        </div>
+      </motion.div>
+      <div className="p-10">
+        <PaginationDemo page={page} limit={limit} />
+      </div>
+    </>
+  );
+};
+
+export default CardComp;
 
 // 8URf8IqLCgfCGNTI
