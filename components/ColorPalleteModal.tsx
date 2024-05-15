@@ -3,6 +3,7 @@ import { useEffect, useRef } from "react";
 import { Button } from "./ui/button";
 import { CopyIcon, Download, Heart } from "lucide-react";
 import toast from "react-hot-toast";
+import { HexRgbTabs } from "./HexRgbTabs";
 
 interface Color {
   hex: string;
@@ -79,7 +80,7 @@ const ColorPalleteModal: React.FC<ColorPaletteImageProps> = ({ colors }) => {
   };
 
   return (
-    <div>
+    <div className="flex flex-col">
       <canvas
         ref={canvasRef}
         width="300"

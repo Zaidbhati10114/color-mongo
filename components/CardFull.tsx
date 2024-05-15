@@ -132,7 +132,7 @@ export const CardTest: React.FC<CardProps> = ({
             <h1>LIke</h1>
           </motion.div>
         </DialogTrigger>
-        <DialogContent className="sm:max-w-[425px] md:max-w-[95vh] h-auto w-full max-h-[85vh] overflow-y-auto">
+        <DialogContent className="max-w-full sm:max-w-[425px] md:max-w-[95vh] h-auto w-full max-h-[85vh] overflow-y-auto">
           <DialogHeader>
             <DialogTitle>Color Pallete</DialogTitle>
             <DialogDescription>May be the name</DialogDescription>
@@ -143,7 +143,7 @@ export const CardTest: React.FC<CardProps> = ({
               <ColorPalleteModal colors={colors} />
             </div>
             <Separator orientation="vertical" className="hidden md:block" />
-            <div className="flex ml-0 md:ml-10 w-full md:w-auto">
+            <div className="flex ml-0 ml-10 w-full md:w-auto mb-10">
               <HexRgbTabs colors={colors} />
             </div>
           </div>
