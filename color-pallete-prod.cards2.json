@@ -1,0 +1,841 @@
+[{
+  "_id": {
+    "$oid": "65f1796b04adc5a816aab1a7"
+  },
+  "one": "6420AA",
+  "two": "FF3EA5",
+  "three": "FF7ED4",
+  "four": "FFB5DA",
+  "pallete_type": "Blue"
+},
+{
+  "_id": {
+    "$oid": "65f1781204adc5a816aab1a6"
+  },
+  "one": "FFE6E6",
+  "two": "E1AFD1",
+  "three": "AD88C6",
+  "four": "7469B6",
+  "pallete_type": "Red"
+},
+{
+  "_id": {
+    "$oid": "65f14fc504adc5a816aab1a5"
+  },
+  "one": "114232",
+  "two": "87A922",
+  "three": "FCDC2A",
+  "four": "F7F6BB",
+  "pallete_type": "Red",
+  "likeCount": 16
+},
+{
+  "_id": {
+    "$oid": "65f17be204adc5a816aab1a8"
+  },
+  "one": "59D5E0",
+  "two": "F5DD61",
+  "three": "FAA300",
+  "four": "F4538A",
+  "pallete_type": "Blue"
+},
+{
+  "_id": {
+    "$oid": "6641b6dd594e08a341b44229"
+  },
+  "one": "FFE5EC",
+  "two": "FFD7E9",
+  "three": "FFC9E6",
+  "four": "FFBBE3",
+  "pallete_type": "Pastel"
+},
+{
+  "_id": {
+    "$oid": "6641b6dd594e08a341b4422a"
+  },
+  "one": "FFEAEF",
+  "two": "FFD5DF",
+  "three": "FFC0CF",
+  "four": "FFABBC",
+  "pallete_type": "Pastel"
+},
+{
+  "_id": {
+    "$oid": "6641b6dd594e08a341b4422b"
+  },
+  "one": "FFF0F2",
+  "two": "FFE1E5",
+  "three": "FFD2D8",
+  "four": "FFC3CB",
+  "pallete_type": "Pastel"
+},
+{
+  "_id": {
+    "$oid": "6641b6dd594e08a341b4422c"
+  },
+  "one": "FFF5F6",
+  "two": "FFEBEC",
+  "three": "FFE1E2",
+  "four": "FFD7D8",
+  "pallete_type": "Pastel"
+},
+{
+  "_id": {
+    "$oid": "6641b6dd594e08a341b4422d"
+  },
+  "one": "FFFAFA",
+  "two": "FFF5F5",
+  "three": "FFF0F0",
+  "four": "FFEBEB",
+  "pallete_type": "Pastel"
+},
+{
+  "_id": {
+    "$oid": "6641b6dd594e08a341b4422e"
+  },
+  "one": "FBFEFF",
+  "two": "F7FDFF",
+  "three": "F3FCFF",
+  "four": "EFFBFF",
+  "pallete_type": "Pastel"
+},
+{
+  "_id": {
+    "$oid": "6641b6dd594e08a341b4422f"
+  },
+  "one": "F6FCFF",
+  "two": "EDF9FF",
+  "three": "E4F6FF",
+  "four": "DBF3FF",
+  "pallete_type": "Pastel"
+},
+{
+  "_id": {
+    "$oid": "6641b6dd594e08a341b44230"
+  },
+  "one": "F1FAFF",
+  "two": "E3F5FF",
+  "three": "D5F0FF",
+  "four": "C7EBFF",
+  "pallete_type": "Pastel"
+},
+{
+  "_id": {
+    "$oid": "6641b6dd594e08a341b44231"
+  },
+  "one": "ECF8FF",
+  "two": "D9F1FF",
+  "three": "C6EAFF",
+  "four": "B3E3FF",
+  "pallete_type": "Pastel"
+},
+{
+  "_id": {
+    "$oid": "6641b6dd594e08a341b44232"
+  },
+  "one": "E7F6FF",
+  "two": "CFEDFB",
+  "three": "B7E4F7",
+  "four": "9FDBF3",
+  "pallete_type": "Pastel"
+},
+{
+  "_id": {
+    "$oid": "6641b6dd594e08a341b44233"
+  },
+  "one": "E2F4FF",
+  "two": "C5E9FF",
+  "three": "A8DEFF",
+  "four": "8BD3FD",
+  "pallete_type": "Pastel"
+},
+{
+  "_id": {
+    "$oid": "6641b6dd594e08a341b44234"
+  },
+  "one": "DDF2FF",
+  "two": "BBE5FF",
+  "three": "99D8FF",
+  "four": "77CBFF",
+  "pallete_type": "Pastel"
+},
+{
+  "_id": {
+    "$oid": "6641b6dd594e08a341b44235"
+  },
+  "one": "D8F0FF",
+  "two": "B1E1FF",
+  "three": "8AD2FF",
+  "four": "63C3FF",
+  "pallete_type": "Pastel"
+},
+{
+  "_id": {
+    "$oid": "6641b6dd594e08a341b44236"
+  },
+  "one": "D3EEFF",
+  "two": "A7DDFD",
+  "three": "7BCBFD",
+  "four": "4FB9FD",
+  "pallete_type": "Pastel"
+},
+{
+  "_id": {
+    "$oid": "6641b6dd594e08a341b44237"
+  },
+  "one": "CEECFF",
+  "two": "9DD9FF",
+  "three": "6CC6FF",
+  "four": "3BB3FF",
+  "pallete_type": "Pastel"
+},
+{
+  "_id": {
+    "$oid": "6641b6dd594e08a341b44238"
+  },
+  "one": "C9EAFF",
+  "two": "93D5FF",
+  "three": "5DC0FF",
+  "four": "27ABFF",
+  "pallete_type": "Pastel"
+},
+{
+  "_id": {
+    "$oid": "6641b6dd594e08a341b44239"
+  },
+  "one": "C4E8FF",
+  "two": "89D1FF",
+  "three": "4EBAFB",
+  "four": "13A3F7",
+  "pallete_type": "Pastel"
+},
+{
+  "_id": {
+    "$oid": "6641b6dd594e08a341b4423a"
+  },
+  "one": "BFE6FF",
+  "two": "7FCDFF",
+  "three": "3FB4FF",
+  "four": "FF9BEF",
+  "pallete_type": "Pastel"
+},
+{
+  "_id": {
+    "$oid": "6641b6dd594e08a341b4423b"
+  },
+  "one": "BAE4FF",
+  "two": "75C9FF",
+  "three": "30AEFF",
+  "four": "EB93E7",
+  "pallete_type": "Pastel"
+},
+{
+  "_id": {
+    "$oid": "6641b6dd594e08a341b4423c"
+  },
+  "one": "B5E2FF",
+  "two": "6BC5FF",
+  "three": "21A8FF",
+  "four": "D78BDF",
+  "pallete_type": "Pastel"
+},
+{
+  "_id": {
+    "$oid": "6641ddb2594e08a341b4423d"
+  },
+  "one": "E1D7D8",
+  "two": "D8C3A6",
+  "three": "EAE0C8",
+  "four": "A98274",
+  "pallete_type": "Vintage"
+},
+{
+  "_id": {
+    "$oid": "6641ddb2594e08a341b4423e"
+  },
+  "one": "F5EBE0",
+  "two": "E6D6C7",
+  "three": "D3BDA9",
+  "four": "B08968",
+  "pallete_type": "Vintage"
+},
+{
+  "_id": {
+    "$oid": "6641ddb2594e08a341b4423f"
+  },
+  "one": "F8F0E3",
+  "two": "E9DEC3",
+  "three": "D4C8A9",
+  "four": "B7A987",
+  "pallete_type": "Vintage"
+},
+{
+  "_id": {
+    "$oid": "6641ddb2594e08a341b44240"
+  },
+  "one": "FAF5EF",
+  "two": "F2E8D7",
+  "three": "E6D5C4",
+  "four": "D0B99B",
+  "pallete_type": "Vintage"
+},
+{
+  "_id": {
+    "$oid": "6641ddb2594e08a341b44241"
+  },
+  "one": "F7EDE3",
+  "two": "EBD9C3",
+  "three": "DBC0A7",
+  "four": "C3A285",
+  "pallete_type": "Vintage"
+},
+{
+  "_id": {
+    "$oid": "6641ddb2594e08a341b44242"
+  },
+  "one": "FDF8F2",
+  "two": "F8EDE2",
+  "three": "F0DFD1",
+  "four": "E2C9B5",
+  "pallete_type": "Vintage"
+},
+{
+  "_id": {
+    "$oid": "6641ddb2594e08a341b44243"
+  },
+  "one": "FBF7F2",
+  "two": "F6EBDF",
+  "three": "EAD9C8",
+  "four": "D9C0AB",
+  "pallete_type": "Vintage"
+},
+{
+  "_id": {
+    "$oid": "6641ddb2594e08a341b44244"
+  },
+  "one": "FDF9F6",
+  "two": "FAEEE7",
+  "three": "F4DFD3",
+  "four": "E9C9B2",
+  "pallete_type": "Vintage"
+},
+{
+  "_id": {
+    "$oid": "6641ddb2594e08a341b44245"
+  },
+  "one": "FBF6F0",
+  "two": "F3E9DB",
+  "three": "E9D9C5",
+  "four": "D9C0A9",
+  "pallete_type": "Vintage"
+},
+{
+  "_id": {
+    "$oid": "6641ddb2594e08a341b44246"
+  },
+  "one": "FDF8F2",
+  "two": "F9EEE2",
+  "three": "F2E1D1",
+  "four": "E5CBBA",
+  "pallete_type": "Vintage"
+},
+{
+  "_id": {
+    "$oid": "6641ddb2594e08a341b44247"
+  },
+  "one": "FDF9F6",
+  "two": "FAEEE8",
+  "three": "F4E1D6",
+  "four": "E9CCB9",
+  "pallete_type": "Vintage"
+},
+{
+  "_id": {
+    "$oid": "6641ddb2594e08a341b44248"
+  },
+  "one": "FCF7F1",
+  "two": "F7EBE1",
+  "three": "EFD9CA",
+  "four": "E2C2B0",
+  "pallete_type": "Vintage"
+},
+{
+  "_id": {
+    "$oid": "6641ddb2594e08a341b44249"
+  },
+  "one": "FDF9F5",
+  "two": "F9F0E6",
+  "three": "F2E4D6",
+  "four": "E6D2C2",
+  "pallete_type": "Vintage"
+},
+{
+  "_id": {
+    "$oid": "6641ddb2594e08a341b4424a"
+  },
+  "one": "FBF6F0",
+  "two": "F4EAE0",
+  "three": "EAD9CC",
+  "four": "DCC2B3",
+  "pallete_type": "Vintage"
+},
+{
+  "_id": {
+    "$oid": "6641ddb2594e08a341b4424b"
+  },
+  "one": "FDF9F6",
+  "two": "F9F1E9",
+  "three": "F2E5D7",
+  "four": "E6D4C4",
+  "pallete_type": "Vintage"
+},
+{
+  "_id": {
+    "$oid": "6641e0bd594e08a341b4424c"
+  },
+  "one": "FE4365",
+  "two": "FC9D9A",
+  "three": "F9CDAD",
+  "four": "C8C6C6",
+  "pallete_type": "Retro"
+},
+{
+  "_id": {
+    "$oid": "6641e0bd594e08a341b4424d"
+  },
+  "one": "FF9AA2",
+  "two": "FFD6BA",
+  "three": "FFE08C",
+  "four": "D0E1C2",
+  "pallete_type": "Retro"
+},
+{
+  "_id": {
+    "$oid": "6641e0bd594e08a341b4424e"
+  },
+  "one": "FF6B6B",
+  "two": "FFD93D",
+  "three": "4D8C57",
+  "four": "1E2E20",
+  "pallete_type": "Retro"
+},
+{
+  "_id": {
+    "$oid": "6641e0bd594e08a341b4424f"
+  },
+  "one": "FF7F50",
+  "two": "FFBF69",
+  "three": "FFF0B3",
+  "four": "A0DAD0",
+  "pallete_type": "Retro"
+},
+{
+  "_id": {
+    "$oid": "6641e0bd594e08a341b44250"
+  },
+  "one": "FF8360",
+  "two": "FFF0C2",
+  "three": "BCE3C5",
+  "four": "5C858E",
+  "pallete_type": "Retro"
+},
+{
+  "_id": {
+    "$oid": "6641e0bd594e08a341b44251"
+  },
+  "one": "FF6F61",
+  "two": "FFCB69",
+  "three": "FCE59A",
+  "four": "ABD8C0",
+  "pallete_type": "Retro"
+},
+{
+  "_id": {
+    "$oid": "6641e0bd594e08a341b44252"
+  },
+  "one": "FF8A65",
+  "two": "FFF79C",
+  "three": "D0F2BE",
+  "four": "A0D2DB",
+  "pallete_type": "Retro"
+},
+{
+  "_id": {
+    "$oid": "6641e0bd594e08a341b44253"
+  },
+  "one": "FF7D62",
+  "two": "FFE181",
+  "three": "B4E094",
+  "four": "4D8B5F",
+  "pallete_type": "Retro"
+},
+{
+  "_id": {
+    "$oid": "6641e0bd594e08a341b44254"
+  },
+  "one": "FF9671",
+  "two": "FFF6BD",
+  "three": "E3FCE7",
+  "four": "95D7C5",
+  "pallete_type": "Retro"
+},
+{
+  "_id": {
+    "$oid": "6641e0bd594e08a341b44255"
+  },
+  "one": "FF6B6B",
+  "two": "FFE66D",
+  "three": "8CDCB3",
+  "four": "548A89",
+  "pallete_type": "Retro"
+},
+{
+  "_id": {
+    "$oid": "6641e0bd594e08a341b44256"
+  },
+  "one": "FF8585",
+  "two": "FFF2CC",
+  "three": "D9EFE5",
+  "four": "83B7B0",
+  "pallete_type": "Retro"
+},
+{
+  "_id": {
+    "$oid": "6641e0bd594e08a341b44257"
+  },
+  "one": "FF7F50",
+  "two": "FFF7D8",
+  "three": "C8E6C9",
+  "four": "4D8C57",
+  "pallete_type": "Retro"
+},
+{
+  "_id": {
+    "$oid": "6641e0bd594e08a341b44258"
+  },
+  "one": "FF9980",
+  "two": "FFFCDD",
+  "three": "E2F5D4",
+  "four": "A7D7AB",
+  "pallete_type": "Retro"
+},
+{
+  "_id": {
+    "$oid": "6641e0bd594e08a341b44259"
+  },
+  "one": "FF8360",
+  "two": "FFE6A8",
+  "three": "B3DFC4",
+  "four": "5C8B75",
+  "pallete_type": "Retro"
+},
+{
+  "_id": {
+    "$oid": "6641e0bd594e08a341b4425a"
+  },
+  "one": "FF6D67",
+  "two": "FFD778",
+  "three": "D1F2C9",
+  "four": "83B39D",
+  "pallete_type": "Retro"
+},
+{
+  "_id": {
+    "$oid": "6641e15d594e08a341b4425b"
+  },
+  "one": "D0F0C0",
+  "two": "A8E890",
+  "three": "78D356",
+  "four": "58B957",
+  "pallete_type": "Green"
+},
+{
+  "_id": {
+    "$oid": "6641e15d594e08a341b4425c"
+  },
+  "one": "E8F5E9",
+  "two": "C8E6C9",
+  "three": "A5D6A7",
+  "four": "81C784",
+  "pallete_type": "Green"
+},
+{
+  "_id": {
+    "$oid": "6641e15d594e08a341b4425d"
+  },
+  "one": "E6EE9C",
+  "two": "C5E48B",
+  "three": "9CDC67",
+  "four": "7CB342",
+  "pallete_type": "Green"
+},
+{
+  "_id": {
+    "$oid": "6641e15d594e08a341b4425e"
+  },
+  "one": "D9F2C3",
+  "two": "B4E194",
+  "three": "8DD367",
+  "four": "6BC950",
+  "pallete_type": "Green"
+},
+{
+  "_id": {
+    "$oid": "6641e15d594e08a341b4425f"
+  },
+  "one": "E3F9E5",
+  "two": "C1EEC6",
+  "three": "9ADAB0",
+  "four": "66BB6A",
+  "pallete_type": "Green"
+},
+{
+  "_id": {
+    "$oid": "6641e15d594e08a341b44260"
+  },
+  "one": "F1FBE7",
+  "two": "E1F8CB",
+  "three": "C5EAA1",
+  "four": "A0D468",
+  "pallete_type": "Green"
+},
+{
+  "_id": {
+    "$oid": "6641e15d594e08a341b44261"
+  },
+  "one": "E5F5D7",
+  "two": "C7EEB4",
+  "three": "9EE284",
+  "four": "6DB65B",
+  "pallete_type": "Green"
+},
+{
+  "_id": {
+    "$oid": "6641e15d594e08a341b44262"
+  },
+  "one": "F0FEE5",
+  "two": "DEFCCD",
+  "three": "C4F7A7",
+  "four": "9CDD74",
+  "pallete_type": "Green"
+},
+{
+  "_id": {
+    "$oid": "6641e15d594e08a341b44263"
+  },
+  "one": "F0FDF4",
+  "two": "DDFADF",
+  "three": "BAF3BB",
+  "four": "8EE68E",
+  "pallete_type": "Green"
+},
+{
+  "_id": {
+    "$oid": "6641e15d594e08a341b44264"
+  },
+  "one": "E7FBED",
+  "two": "CFEFDF",
+  "three": "B4DFC7",
+  "four": "8EBB99",
+  "pallete_type": "Green"
+},
+{
+  "_id": {
+    "$oid": "6641e15d594e08a341b44265"
+  },
+  "one": "ECFCDE",
+  "two": "D5F9C1",
+  "three": "B6EF9A",
+  "four": "8CD97E",
+  "pallete_type": "Green"
+},
+{
+  "_id": {
+    "$oid": "6641e15d594e08a341b44266"
+  },
+  "one": "F4FEE8",
+  "two": "E4FDD1",
+  "three": "CEFAAD",
+  "four": "B0ED87",
+  "pallete_type": "Green"
+},
+{
+  "_id": {
+    "$oid": "6641e15d594e08a341b44267"
+  },
+  "one": "F2FEF5",
+  "two": "E1FDE8",
+  "three": "C4F8D7",
+  "four": "9AEFC0",
+  "pallete_type": "Green"
+},
+{
+  "_id": {
+    "$oid": "6641e15d594e08a341b44268"
+  },
+  "one": "EBFBF3",
+  "two": "D2F7E8",
+  "three": "AEE9D8",
+  "four": "89D8C3",
+  "pallete_type": "Green"
+},
+{
+  "_id": {
+    "$oid": "6641e15d594e08a341b44269"
+  },
+  "one": "F2FFF8",
+  "two": "E2FFE9",
+  "three": "CDFFDA",
+  "four": "ACFFC4",
+  "pallete_type": "Green"
+},
+{
+  "_id": {
+    "$oid": "6641e206594e08a341b4426a"
+  },
+  "one": "FFFF99",
+  "two": "FFFF80",
+  "three": "FFFF66",
+  "four": "FFFF33",
+  "pallete_type": "Yellow"
+},
+{
+  "_id": {
+    "$oid": "6641e206594e08a341b4426b"
+  },
+  "one": "FFFFD9",
+  "two": "FFFF99",
+  "three": "FFFF66",
+  "four": "FFFF00",
+  "pallete_type": "Yellow"
+},
+{
+  "_id": {
+    "$oid": "6641e206594e08a341b4426c"
+  },
+  "one": "FFFFC2",
+  "two": "FFFF92",
+  "three": "FFFF61",
+  "four": "FFFF0F",
+  "pallete_type": "Yellow"
+},
+{
+  "_id": {
+    "$oid": "6641e206594e08a341b4426d"
+  },
+  "one": "FFFFDD",
+  "two": "FFFFBB",
+  "three": "FFFF99",
+  "four": "FFFF77",
+  "pallete_type": "Yellow"
+},
+{
+  "_id": {
+    "$oid": "6641e206594e08a341b4426e"
+  },
+  "one": "FFFFC7",
+  "two": "FFFF9F",
+  "three": "FFFF77",
+  "four": "FFFF4F",
+  "pallete_type": "Yellow"
+},
+{
+  "_id": {
+    "$oid": "6641e206594e08a341b4426f"
+  },
+  "one": "FFFFEF",
+  "two": "FFFFDF",
+  "three": "FFFFCF",
+  "four": "FFFFBF",
+  "pallete_type": "Yellow"
+},
+{
+  "_id": {
+    "$oid": "6641e206594e08a341b44270"
+  },
+  "one": "FFFFE5",
+  "two": "FFFFCB",
+  "three": "FFFFB1",
+  "four": "FFFF97",
+  "pallete_type": "Yellow"
+},
+{
+  "_id": {
+    "$oid": "6641e206594e08a341b44271"
+  },
+  "one": "FFFFF0",
+  "two": "FFFFE0",
+  "three": "FFFFCF",
+  "four": "FFFFBF",
+  "pallete_type": "Yellow"
+},
+{
+  "_id": {
+    "$oid": "6641e206594e08a341b44272"
+  },
+  "one": "FFFFFA",
+  "two": "FFFFF5",
+  "three": "FFFFF0",
+  "four": "FFFFEB",
+  "pallete_type": "Yellow"
+},
+{
+  "_id": {
+    "$oid": "6641e206594e08a341b44273"
+  },
+  "one": "FFFFE0",
+  "two": "FFFFC0",
+  "three": "FFFFA0",
+  "four": "FFFF80",
+  "pallete_type": "Yellow"
+},
+{
+  "_id": {
+    "$oid": "6641e206594e08a341b44274"
+  },
+  "one": "FFFFEC",
+  "two": "FFFFD9",
+  "three": "FFFFC6",
+  "four": "FFFFB3",
+  "pallete_type": "Yellow"
+},
+{
+  "_id": {
+    "$oid": "6641e206594e08a341b44275"
+  },
+  "one": "FFFFF7",
+  "two": "FFFFEF",
+  "three": "FFFFE7",
+  "four": "FFFFDF",
+  "pallete_type": "Yellow"
+},
+{
+  "_id": {
+    "$oid": "6641e206594e08a341b44276"
+  },
+  "one": "FFFFF3",
+  "two": "FFFFE7",
+  "three": "FFFFDB",
+  "four": "FFFFCF",
+  "pallete_type": "Yellow"
+},
+{
+  "_id": {
+    "$oid": "6641e206594e08a341b44277"
+  },
+  "one": "FFFFFE",
+  "two": "FFFFFC",
+  "three": "FFFFFA",
+  "four": "FFFFF8",
+  "pallete_type": "Yellow"
+},
+{
+  "_id": {
+    "$oid": "6641e206594e08a341b44278"
+  },
+  "one": "FFFFEA",
+  "two": "FFFFD5",
+  "three": "FFFFF0",
+  "four": "FFFFAB",
+  "pallete_type": "Yellow"
+}]

@@ -1,0 +1,20 @@
+this is claude to get cards for collections
+{
+
+  "_id": {
+
+    "$oid": "65f1796b04adc5a816aab1a7"
+
+  },
+
+  "one": "6420AA",
+
+  "two": "FF3EA5",
+
+  "three": "FF7ED4",
+
+  "four": "FFB5DA",
+
+  "pallete_type": "Blue"
+
+} this is my one document in mongodb i want you to generate hex code for pallete collections for "Pastel" in this format without the id and add pallete_type:"Pastel" to every document must in 20 in count in json format
