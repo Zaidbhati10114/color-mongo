@@ -101,18 +101,14 @@ const ColorPalleteModal: React.FC<ColorPaletteImageProps> = ({ colors }) => {
           onClick={handleCopyPalette}
           size="sm"
           variant="secondary"
-          className="w-full md:w-auto"
+          className=""
         >
           <CopyIcon className="mr-2 h-4 w-4" /> Copy Palette
         </Button>
-        <Button variant="secondary" className="w-full md:w-auto">
+        <Button variant="secondary" className="">
           <Heart className="mr-2 h-4 w-4" /> 10
         </Button>
-        <Button
-          onClick={downloadImage}
-          variant="secondary"
-          className="w-full md:w-auto"
-        >
+        <Button onClick={downloadImage} variant="secondary" className="">
           <Download className="mr-2 h-4 w-4" /> Image
         </Button>
       </div>

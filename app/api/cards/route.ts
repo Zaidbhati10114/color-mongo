@@ -1,6 +1,5 @@
 import { Card } from '@/lib/database/models/card';
 import { connectToDatabase } from '@/lib/database/mongoose';
-import { NextApiRequest, NextApiResponse } from 'next';
 import { NextRequest, NextResponse } from 'next/server';
 
 
@@ -9,7 +8,7 @@ export async function GET(req: NextRequest) {
         await connectToDatabase();
 
         const page = req.nextUrl.searchParams.get('page')
-            ? parseInt(req.nextUrl.searchParams.get('page') || '', 10)
+            ? parseInt(req.nextUrl.searchParams.get('page') || '', 15)
             : 1;
         const limit = 10; // Number of cards per page
         const skip = (page - 1) * limit;
