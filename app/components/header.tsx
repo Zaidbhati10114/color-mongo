@@ -42,19 +42,26 @@ const Header = () => {
             className="flex flex-row space-x-3 items-center justify-center md:hidden"
           >
             <Image src="/logo.svg" width={30} height={30} alt="logo_mobile" />
-            <span className="font-bold text-xl flex ">Color Pallets</span>
+            <span className="font-bold md:text-xl flex ml-2">
+              Color Pallets
+            </span>
           </Link>
         </div>
 
-        <div className="mr-20">
+        <div className="">
           <InputComponent />
         </div>
 
         <div className="hidden md:block">
           <div className="flex items-center justify-center text-center">
-            <Button className={inter.className} variant="secondary">
-              Star on Github
-              <Heart className="fill-primary h-5 w-5 ml-1" />
+            <Button asChild className={inter.className} variant="secondary">
+              <Link
+                target="_blank"
+                href="https://github.com/Zaidbhati10114/color-mongo"
+              >
+                Star on Github
+                <Heart className="fill-primary h-5 w-5 ml-1" />
+              </Link>
             </Button>
           </div>
         </div>

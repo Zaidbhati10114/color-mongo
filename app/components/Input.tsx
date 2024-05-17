@@ -114,7 +114,7 @@ const InputComponent: React.FC = () => {
 
   return (
     <>
-      <div className="relative flex items-center border border-gray-300 rounded-md shadow-sm">
+      <div className="relative flex items-center border border-gray-300 rounded-md shadow-sm mr-10">
         <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
           <Search className="h-4 w-4 text-gray-400" />
         </div>

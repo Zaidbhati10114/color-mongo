@@ -3,7 +3,6 @@ import { useEffect, useRef } from "react";
 import { Button } from "./ui/button";
 import { CopyIcon, Download, Heart } from "lucide-react";
 import toast from "react-hot-toast";
-import { HexRgbTabs } from "./HexRgbTabs";
 
 interface Color {
   hex: string;
@@ -16,6 +15,7 @@ interface ColorPaletteImageProps {
 
 const ColorPalleteModal: React.FC<ColorPaletteImageProps> = ({ colors }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+
   useEffect(() => {
     const canvas = canvasRef.current;
     if (canvas) {
@@ -33,41 +33,48 @@ const ColorPalleteModal: React.FC<ColorPaletteImageProps> = ({ colors }) => {
     }
   }, [colors]);
 
-  function combineHexCodes(
-    hex1: string,
-    hex2: string,
-    hex3: string,
-    hex4: string
-  ): string[] {
-    // Remove the leading "#" from the hex values if present
-    const cleanHex1 = hex1.startsWith("#") ? hex1.slice(1) : hex1;
-    const cleanHex2 = hex2.startsWith("#") ? hex2.slice(1) : hex2;
-    const cleanHex3 = hex3.startsWith("#") ? hex3.slice(1) : hex3;
-    const cleanHex4 = hex4.startsWith("#") ? hex4.slice(1) : hex4;
+  const combineHexCodes = (...hexes: string[]): string[] => {
+    const isValidHex = (hex: string) => /^#?[0-9a-fA-F]{6}$/.test(hex);
 
-    // Check if the input hex values are valid
-    const isValidHex = (hex: string) => /^[0-9a-fA-F]{6}$/.test(hex);
-    if (
-      !isValidHex(cleanHex1) ||
-      !isValidHex(cleanHex2) ||
-      !isValidHex(cleanHex3) ||
-      !isValidHex(cleanHex4)
-    ) {
-      throw new Error("Invalid hex code");
-    }
+    hexes.forEach((hex) => {
+      if (!isValidHex(hex)) {
+        throw new Error("Invalid hex code");
+      }
+    });
 
-    // Combine the hex codes into a single string
-    const combinedHex = `${cleanHex1}${cleanHex2}${cleanHex3}${cleanHex4}`;
+    const combinedHex = hexes
+      .map((hex) => (hex.startsWith("#") ? hex.slice(1) : hex))
+      .join("");
 
-    // Split the combined hex string into an array of 6-character chunks
-    const hexArray = [];
+    const hexArray: string[] = [];
     for (let i = 0; i < combinedHex.length; i += 6) {
       hexArray.push(`#${combinedHex.slice(i, i + 6)}`);
     }
-    toast.success("Palette copied to clipboard");
 
     return hexArray;
-  }
+  };
+
+  const copyToClipboard = (text: string) => {
+    navigator.clipboard.writeText(text).then(
+      () => {
+        toast.success("Palette copied to clipboard");
+      },
+      (err) => {
+        toast.error("Failed to copy palette");
+      }
+    );
+  };
+
+  const handleCopyPalette = () => {
+    try {
+      const combinedHexCodes = combineHexCodes(
+        ...colors.map((color) => color.hex)
+      );
+      copyToClipboard(combinedHexCodes.join(", "));
+    } catch (error) {
+      toast.error((error as Error).message);
+    }
+  };
 
   const downloadImage = () => {
     const canvas = canvasRef.current;
@@ -83,25 +90,20 @@ const ColorPalleteModal: React.FC<ColorPaletteImageProps> = ({ colors }) => {
     <div className="flex flex-col">
       <canvas
         ref={canvasRef}
-        width="300"
-        height="400"
-        className="mb-4 rounded-md"
+        className="mb-4 rounded-md 
+                   w-full h-48 
+                   sm:w-72 sm:h-96
+                   md:w-80 md:h-[450px]
+                   lg:w-96 lg:h-[550px]"
       />
       <div className="flex gap-1 mt-4 flex-wrap">
         <Button
-          onClick={() =>
-            combineHexCodes(
-              colors[0].hex,
-              colors[1].hex,
-              colors[2].hex,
-              colors[3].hex
-            )
-          }
+          onClick={handleCopyPalette}
           size="sm"
           variant="secondary"
           className="w-full md:w-auto"
         >
-          <CopyIcon className="mr-2 h-4 w-4" /> Copy Pallete
+          <CopyIcon className="mr-2 h-4 w-4" /> Copy Palette
         </Button>
         <Button variant="secondary" className="w-full md:w-auto">
           <Heart className="mr-2 h-4 w-4" /> 10

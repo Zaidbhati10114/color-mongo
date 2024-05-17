@@ -80,11 +80,13 @@ export default function Home() {
       )}
 
       {!hasMore && (
-        <div className="text-center">
-          <Button variant="destructive">End</Button>
-        </div>
+        <>
+          <div className="text-center">
+            <Button variant="destructive">End</Button>
+          </div>
+          <Footer />
+        </>
       )}
-      <Footer />
     </>
   );
 }

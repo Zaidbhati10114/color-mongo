@@ -143,7 +143,7 @@ export const CardTest: React.FC<CardProps> = ({
               <ColorPalleteModal colors={colors} />
             </div>
             <Separator orientation="vertical" className="hidden md:block" />
-            <div className="flex ml-0 ml-10 w-full md:w-auto mb-10">
+            <div className="flex w-full md:w-auto mb-10">
               <HexRgbTabs colors={colors} />
             </div>
           </div>
