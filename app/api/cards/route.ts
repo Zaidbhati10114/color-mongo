@@ -10,7 +10,7 @@ export async function GET(req: NextRequest) {
         const page = req.nextUrl.searchParams.get('page')
             ? parseInt(req.nextUrl.searchParams.get('page') || '', 15)
             : 1;
-        const limit = 10; // Number of cards per page
+        const limit = 15; // Number of cards per page
         const skip = (page - 1) * limit;
 
         const cards = await Card.find().skip(skip).limit(limit);
