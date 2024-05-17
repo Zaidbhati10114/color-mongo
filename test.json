@@ -4,104 +4,139 @@
     "two": "A8E890",
     "three": "78D356",
     "four": "58B957",
-    "pallete_type": "Green"
+    "likeCount": 0
   },
   {
-    "one": "E8F5E9",
-    "two": "C8E6C9",
-    "three": "A5D6A7",
-    "four": "81C784",
-    "pallete_type": "Green"
+    "one": "FFCDD2",
+    "two": "EF9A9A",
+    "three": "E57373",
+    "four": "EF5350",
+    "likeCount": 0
+  },
+  {
+    "one": "BBDEFB",
+    "two": "90CAF9",
+    "three": "64B5F6",
+    "four": "42A5F5",
+    "likeCount": 0
+  },
+  {
+    "one": "C8E6C9",
+    "two": "A5D6A7",
+    "three": "81C784",
+    "four": "66BB6A",
+    "likeCount": 0
+  },
+  {
+    "one": "D1C4E9",
+    "two": "B39DDB",
+    "three": "9575CD",
+    "four": "7E57C2",
+    "likeCount": 0
+  },
+  {
+    "one": "F8BBD0",
+    "two": "F48FB1",
+    "three": "F06292",
+    "four": "EC407A",
+    "likeCount": 0
+  },
+  {
+    "one": "FFECB3",
+    "two": "FFE082",
+    "three": "FFD54F",
+    "four": "FFCA28",
+    "likeCount": 0
+  },
+  {
+    "one": "B2DFDB",
+    "two": "80CBC4",
+    "three": "4DB6AC",
+    "four": "26A69A",
+    "likeCount": 0
+  },
+  {
+    "one": "FFE0B2",
+    "two": "FFCC80",
+    "three": "FFB74D",
+    "four": "FFA726",
+    "likeCount": 0
+  },
+  {
+    "one": "DCEDC8",
+    "two": "C5E1A5",
+    "three": "AED581",
+    "four": "9CCC65",
+    "likeCount": 0
+  },
+  {
+    "one": "E1BEE7",
+    "two": "CE93D8",
+    "three": "BA68C8",
+    "four": "AB47BC",
+    "likeCount": 0
+  },
+  {
+    "one": "FFCCBC",
+    "two": "FFAB91",
+    "three": "FF8A65",
+    "four": "FF7043",
+    "likeCount": 0
+  },
+  {
+    "one": "D7CCC8",
+    "two": "BCAAA4",
+    "three": "A1887F",
+    "four": "8D6E63",
+    "likeCount": 0
+  },
+  {
+    "one": "CFD8DC",
+    "two": "B0BEC5",
+    "three": "90A4AE",
+    "four": "78909C",
+    "likeCount": 0
+  },
+  {
+    "one": "F0F4C3",
+    "two": "E6EE9C",
+    "three": "DCE775",
+    "four": "D4E157",
+    "likeCount": 0
+  },
+  {
+    "one": "FFCDD2",
+    "two": "EF9A9A",
+    "three": "E57373",
+    "four": "EF5350",
+    "likeCount": 0
+  },
+  {
+    "one": "B2EBF2",
+    "two": "80DEEA",
+    "three": "4DD0E1",
+    "four": "26C6DA",
+    "likeCount": 0
+  },
+  {
+    "one": "F3E5F5",
+    "two": "E1BEE7",
+    "three": "CE93D8",
+    "four": "BA68C8",
+    "likeCount": 0
+  },
+  {
+    "one": "FFF9C4",
+    "two": "FFF59D",
+    "three": "FFF176",
+    "four": "FFEE58",
+    "likeCount": 0
   },
   {
     "one": "E6EE9C",
-    "two": "C5E48B",
-    "three": "9CDC67",
-    "four": "7CB342",
-    "pallete_type": "Green"
-  },
-  {
-    "one": "D9F2C3",
-    "two": "B4E194",
-    "three": "8DD367",
-    "four": "6BC950",
-    "pallete_type": "Green"
-  },
-  {
-    "one": "E3F9E5",
-    "two": "C1EEC6",
-    "three": "9ADAB0",
-    "four": "66BB6A",
-    "pallete_type": "Green"
-  },
-  {
-    "one": "F1FBE7",
-    "two": "E1F8CB",
-    "three": "C5EAA1",
-    "four": "A0D468",
-    "pallete_type": "Green"
-  },
-  {
-    "one": "E5F5D7",
-    "two": "C7EEB4",
-    "three": "9EE284",
-    "four": "6DB65B",
-    "pallete_type": "Green"
-  },
-  {
-    "one": "F0FEE5",
-    "two": "DEFCCD",
-    "three": "C4F7A7",
-    "four": "9CDD74",
-    "pallete_type": "Green"
-  },
-  {
-    "one": "F0FDF4",
-    "two": "DDFADF",
-    "three": "BAF3BB",
-    "four": "8EE68E",
-    "pallete_type": "Green"
-  },
-  {
-    "one": "E7FBED",
-    "two": "CFEFDF",
-    "three": "B4DFC7",
-    "four": "8EBB99",
-    "pallete_type": "Green"
-  },
-  {
-    "one": "ECFCDE",
-    "two": "D5F9C1",
-    "three": "B6EF9A",
-    "four": "8CD97E",
-    "pallete_type": "Green"
-  },
-  {
-    "one": "F4FEE8",
-    "two": "E4FDD1",
-    "three": "CEFAAD",
-    "four": "B0ED87",
-    "pallete_type": "Green"
-  },
-  {
-    "one": "F2FEF5",
-    "two": "E1FDE8",
-    "three": "C4F8D7",
-    "four": "9AEFC0",
-    "pallete_type": "Green"
-  },
-  {
-    "one": "EBFBF3",
-    "two": "D2F7E8",
-    "three": "AEE9D8",
-    "four": "89D8C3",
-    "pallete_type": "Green"
-  },
-  {
-    "one": "F2FFF8",
-    "two": "E2FFE9",
-    "three": "CDFFDA",
-    "four": "ACFFC4",
-    "pallete_type": "Green"
+    "two": "DCE775",
+    "three": "D4E157",
+    "four": "CDDC39",
+    "likeCount": 0
   }
 ]

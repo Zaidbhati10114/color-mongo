@@ -9,7 +9,6 @@ export interface Card {
     pallete_type: string;
     likeCount: number;
 }
-
 const CardSchema = new Schema<Card>({
     one: { type: String, required: true },
     two: { type: String, required: true },
@@ -17,7 +16,7 @@ const CardSchema = new Schema<Card>({
     four: { type: String, required: true },
     type: { type: String, enum: ['popular', 'regular', 'new'] },
     pallete_type: { type: String },
-    likeCount: { type: Number, default: 10 },
+    likeCount: { type: Number, },
 });
 
 export const Card = mongoose.models.Card || mongoose.model<Card>("Card", CardSchema)

@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { CardTest } from "@/components/CardFull";
 import { Button } from "@/components/ui/button";
 import Footer from "@/components/Footer";
+import NoCardFound from "@/components/NoCardFound";
 
 interface Card {
   _id: string;
@@ -18,6 +19,7 @@ export default function Home() {
   const [page, setPage] = useState(1);
   const [isLoading, setIsLoading] = useState(false);
   const [hasMore, setHasMore] = useState(true);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     fetchCards();
@@ -27,14 +29,14 @@ export default function Home() {
     setIsLoading(true);
     try {
       // Simulate a delay of 500ms
-      await new Promise((resolve) => setTimeout(resolve, 500));
-
+      await new Promise((resolve) => setTimeout(resolve, 200));
       const res = await fetch(`/api/cards?page=${page}`);
       const newCards = await res.json();
       setCards((prevCards) => [...prevCards, ...newCards]);
       setPage((prevPage) => prevPage + 1);
       setHasMore(newCards.length > 0);
     } catch (error) {
+      setError(true);
       console.error("Error fetching cards:", error);
     } finally {
       setIsLoading(false);
@@ -59,6 +61,7 @@ export default function Home() {
   return (
     <>
       <div className="flex mr-20 justify-center flex-wrap pt-2 pr-2">
+        {error && <NoCardFound />}
         <div className="grid grid-cols-1 gap-4 pl-20  md:ml-30 sm:grid-cols-2 md:grid-cols-4 xl:grid-cols-5 sm:justify-center md:gap-8">
           {cards.map((card) => (
             <CardTest
@@ -68,7 +71,7 @@ export default function Home() {
               two={card.two}
               three={card.three}
               four={card.four}
-              likeCount={card?.likeCount}
+              likeCount={card.likeCount}
             />
           ))}
         </div>

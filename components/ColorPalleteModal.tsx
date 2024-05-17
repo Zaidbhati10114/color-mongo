@@ -1,5 +1,6 @@
 "use client";
-import { useEffect, useRef } from "react";
+
+import { useEffect, useRef, useState } from "react";
 import { Button } from "./ui/button";
 import { CopyIcon, Download, Heart } from "lucide-react";
 import toast from "react-hot-toast";
@@ -11,10 +12,38 @@ interface Color {
 
 interface ColorPaletteImageProps {
   colors: Color[];
+  likeCount: number; // initial like count
+  cardId: string;
 }
 
-const ColorPalleteModal: React.FC<ColorPaletteImageProps> = ({ colors }) => {
+const ColorPalleteModal: React.FC<ColorPaletteImageProps> = ({
+  colors,
+  likeCount: initialLikeCount,
+  cardId,
+}) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const [likeCount, setLikeCount] = useState(initialLikeCount);
+  const [likes, setLike] = useState(false);
+
+  useEffect(() => {
+    const fetchLikeCount = async () => {
+      try {
+        const response = await fetch(`/api/cards/${cardId}/like`, {
+          method: "GET",
+        });
+        if (response.ok) {
+          const data = await response.json();
+          setLikeCount(data.likeCount);
+        } else {
+          toast.error("Failed to fetch like count");
+        }
+      } catch (error) {
+        toast.error("An error occurred while fetching the like count");
+      }
+    };
+
+    fetchLikeCount();
+  }, [cardId]);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -86,12 +115,33 @@ const ColorPalleteModal: React.FC<ColorPaletteImageProps> = ({ colors }) => {
     }
   };
 
+  const handleLike = async () => {
+    try {
+      const response = await fetch(`/api/cards/${cardId}/like`, {
+        method: "POST",
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        setLike(true);
+        setLikeCount(data.likeCount);
+        toast.success("Liked!");
+      } else {
+        toast.error("Failed to like the palette");
+      }
+    } catch (error) {
+      toast.error("An error occurred while liking the palette");
+    }
+  };
+
+  const like = likes ? "fill-red-600" : "";
+
   return (
     <div className="flex flex-col">
       <canvas
         ref={canvasRef}
         className="mb-4 rounded-md 
-                   w-full h-48 
+                   w-60 h-48 
                    sm:w-72 sm:h-96
                    md:w-80 md:h-[450px]
                    lg:w-96 lg:h-[550px]"
@@ -105,8 +155,8 @@ const ColorPalleteModal: React.FC<ColorPaletteImageProps> = ({ colors }) => {
         >
           <CopyIcon className="mr-2 h-4 w-4" /> Copy Palette
         </Button>
-        <Button variant="secondary" className="">
-          <Heart className="mr-2 h-4 w-4" /> 10
+        <Button onClick={handleLike} variant="secondary" className="">
+          <Heart className={`mr-2 h-4 w-4 ${like}`} /> {likeCount}
         </Button>
         <Button onClick={downloadImage} variant="secondary" className="">
           <Download className="mr-2 h-4 w-4" /> Image

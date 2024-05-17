@@ -1,23 +1,42 @@
 import { Card } from "@/lib/database/models/card";
 import { connectToDatabase } from "@/lib/database/mongoose";
-import { revalidatePath } from "next/cache";
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
-export async function PUT(request: Request, { params }: { params: { id: string } }) {
+
+export async function POST(req: NextRequest, { params }: { params: { id: string } }) {
+    const { id } = params;
+
+    await connectToDatabase();
+
     try {
-        await connectToDatabase()
-        const card = await Card.findByIdAndUpdate(
-            params.id,
-            { $inc: { likeCount: 1 } },
-            { new: true }
-        );
+        const card = await Card.findById(id);
         if (!card) {
-            return NextResponse.json({ error: 'Card not found' }, { status: 404 });
+            return NextResponse.json({ message: 'Card not found' }, { status: 404 });
         }
-        revalidatePath(`/cards/${params.id}`)
-        return NextResponse.json(card);
-    } catch (err) {
-        console.error(err);
-        return NextResponse.json({ error: 'Something went wrong' }, { status: 500 });
+
+        card.likeCount += 1;
+        await card.save();
+
+        return NextResponse.json({ likeCount: card.likeCount }, { status: 200 });
+    } catch (error) {
+        return NextResponse.json({ message: 'Internal server error', error }, { status: 500 });
+    }
+}
+
+export async function GET(req: NextRequest, { params }: { params: { id: string } }) {
+    const { id } = params;
+
+    await connectToDatabase();
+
+    try {
+        const card = await Card.findById(id);
+        if (!card) {
+            return NextResponse.json({ message: 'Card not found' }, { status: 404 });
+        }
+        await card.save();
+
+        return NextResponse.json({ likeCount: card.likeCount }, { status: 200 });
+    } catch (error) {
+        return NextResponse.json({ message: 'Internal server error', error }, { status: 500 });
     }
 }

@@ -140,10 +140,14 @@ export const CardTest: React.FC<CardProps> = ({
           <Separator />
           <div className="flex flex-col md:flex-row">
             <div className="mb-4 md:mb-0 md:mr-10 w-full md:w-auto">
-              <ColorPalleteModal colors={colors} />
+              <ColorPalleteModal
+                cardId={id}
+                likeCount={likeCount!}
+                colors={colors}
+              />
             </div>
             <Separator orientation="vertical" className="hidden md:block" />
-            <div className="flex w-full md:w-auto mb-10">
+            <div className="flex w-full md:w-auto md:ml-5 mb-10">
               <HexRgbTabs colors={colors} />
             </div>
           </div>
