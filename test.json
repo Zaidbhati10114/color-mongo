@@ -1,142 +1,242 @@
 [
   {
-    "one": "D0F0C0",
-    "two": "A8E890",
-    "three": "78D356",
-    "four": "58B957",
-    "likeCount": 0
+      "one": "E8F5E9",
+      "two": "C8E6C9",
+      "three": "A5D6A7",
+      "four": "81C784",
+      "pallete_type": "Popular",
+      "likeCount": 0
   },
   {
-    "one": "FFCDD2",
-    "two": "EF9A9A",
-    "three": "E57373",
-    "four": "EF5350",
-    "likeCount": 0
+      "one": "FFEBEE",
+      "two": "FFCDD2",
+      "three": "EF9A9A",
+      "four": "E57373",
+      "pallete_type": "Popular",
+      "likeCount": 0
   },
   {
-    "one": "BBDEFB",
-    "two": "90CAF9",
-    "three": "64B5F6",
-    "four": "42A5F5",
-    "likeCount": 0
+      "one": "E3F2FD",
+      "two": "BBDEFB",
+      "three": "90CAF9",
+      "four": "64B5F6",
+      "pallete_type": "Popular",
+      "likeCount": 0
   },
   {
-    "one": "C8E6C9",
-    "two": "A5D6A7",
-    "three": "81C784",
-    "four": "66BB6A",
-    "likeCount": 0
+      "one": "FFF3E0",
+      "two": "FFE0B2",
+      "three": "FFCC80",
+      "four": "FFB74D",
+      "pallete_type": "Popular",
+      "likeCount": 0
   },
   {
-    "one": "D1C4E9",
-    "two": "B39DDB",
-    "three": "9575CD",
-    "four": "7E57C2",
-    "likeCount": 0
+      "one": "F3E5F5",
+      "two": "E1BEE7",
+      "three": "CE93D8",
+      "four": "BA68C8",
+      "pallete_type": "Popular",
+      "likeCount": 0
   },
   {
-    "one": "F8BBD0",
-    "two": "F48FB1",
-    "three": "F06292",
-    "four": "EC407A",
-    "likeCount": 0
+      "one": "EDE7F6",
+      "two": "D1C4E9",
+      "three": "B39DDB",
+      "four": "9575CD",
+      "pallete_type": "Popular",
+      "likeCount": 0
   },
   {
-    "one": "FFECB3",
-    "two": "FFE082",
-    "three": "FFD54F",
-    "four": "FFCA28",
-    "likeCount": 0
+      "one": "E0F7FA",
+      "two": "B2EBF2",
+      "three": "80DEEA",
+      "four": "4DD0E1",
+      "pallete_type": "Popular",
+      "likeCount": 0
   },
   {
-    "one": "B2DFDB",
-    "two": "80CBC4",
-    "three": "4DB6AC",
-    "four": "26A69A",
-    "likeCount": 0
+      "one": "FFF8E1",
+      "two": "FFECB3",
+      "three": "FFE082",
+      "four": "FFD54F",
+      "pallete_type": "Popular",
+      "likeCount": 0
   },
   {
-    "one": "FFE0B2",
-    "two": "FFCC80",
-    "three": "FFB74D",
-    "four": "FFA726",
-    "likeCount": 0
+      "one": "E8EAF6",
+      "two": "C5CAE9",
+      "three": "9FA8DA",
+      "four": "7986CB",
+      "pallete_type": "Popular",
+      "likeCount": 0
   },
   {
-    "one": "DCEDC8",
-    "two": "C5E1A5",
-    "three": "AED581",
-    "four": "9CCC65",
-    "likeCount": 0
+      "one": "FFEBEE",
+      "two": "FFCDD2",
+      "three": "EF9A9A",
+      "four": "E57373",
+      "pallete_type": "Popular",
+      "likeCount": 0
   },
   {
-    "one": "E1BEE7",
-    "two": "CE93D8",
-    "three": "BA68C8",
-    "four": "AB47BC",
-    "likeCount": 0
+      "one": "F1F8E9",
+      "two": "DCEDC8",
+      "three": "C5E1A5",
+      "four": "AED581",
+      "pallete_type": "Popular",
+      "likeCount": 0
   },
   {
-    "one": "FFCCBC",
-    "two": "FFAB91",
-    "three": "FF8A65",
-    "four": "FF7043",
-    "likeCount": 0
+      "one": "FBE9E7",
+      "two": "FFCCBC",
+      "three": "FFAB91",
+      "four": "FF8A65",
+      "pallete_type": "Popular",
+      "likeCount": 0
   },
   {
-    "one": "D7CCC8",
-    "two": "BCAAA4",
-    "three": "A1887F",
-    "four": "8D6E63",
-    "likeCount": 0
+      "one": "F9FBE7",
+      "two": "F0F4C3",
+      "three": "E6EE9C",
+      "four": "DCE775",
+      "pallete_type": "Popular",
+      "likeCount": 0
   },
   {
-    "one": "CFD8DC",
-    "two": "B0BEC5",
-    "three": "90A4AE",
-    "four": "78909C",
-    "likeCount": 0
+      "one": "FFECB3",
+      "two": "FFE082",
+      "three": "FFD54F",
+      "four": "FFCA28",
+      "pallete_type": "Popular",
+      "likeCount": 0
   },
   {
-    "one": "F0F4C3",
-    "two": "E6EE9C",
-    "three": "DCE775",
-    "four": "D4E157",
-    "likeCount": 0
+      "one": "ECEFF1",
+      "two": "CFD8DC",
+      "three": "B0BEC5",
+      "four": "90A4AE",
+      "pallete_type": "Popular",
+      "likeCount": 0
   },
   {
-    "one": "FFCDD2",
-    "two": "EF9A9A",
-    "three": "E57373",
-    "four": "EF5350",
-    "likeCount": 0
+      "one": "EFEBE9",
+      "two": "D7CCC8",
+      "three": "BCAAA4",
+      "four": "A1887F",
+      "pallete_type": "Popular",
+      "likeCount": 0
   },
   {
-    "one": "B2EBF2",
-    "two": "80DEEA",
-    "three": "4DD0E1",
-    "four": "26C6DA",
-    "likeCount": 0
+      "one": "FFF3E0",
+      "two": "FFE0B2",
+      "three": "FFCC80",
+      "four": "FFB74D",
+      "pallete_type": "Popular",
+      "likeCount": 0
   },
   {
-    "one": "F3E5F5",
-    "two": "E1BEE7",
-    "three": "CE93D8",
-    "four": "BA68C8",
-    "likeCount": 0
+      "one": "E1F5FE",
+      "two": "B3E5FC",
+      "three": "81D4FA",
+      "four": "4FC3F7",
+      "pallete_type": "Popular",
+      "likeCount": 0
   },
   {
-    "one": "FFF9C4",
-    "two": "FFF59D",
-    "three": "FFF176",
-    "four": "FFEE58",
-    "likeCount": 0
+      "one": "FBE9E7",
+      "two": "FFCCBC",
+      "three": "FFAB91",
+      "four": "FF8A65",
+      "pallete_type": "Popular",
+      "likeCount": 0
   },
   {
-    "one": "E6EE9C",
-    "two": "DCE775",
-    "three": "D4E157",
-    "four": "CDDC39",
-    "likeCount": 0
+      "one": "E0F2F1",
+      "two": "B2DFDB",
+      "three": "80CBC4",
+      "four": "4DB6AC",
+      "pallete_type": "Popular",
+      "likeCount": 0
+  },
+  {
+      "one": "E8F5E9",
+      "two": "C8E6C9",
+      "three": "A5D6A7",
+      "four": "81C784",
+      "pallete_type": "Popular",
+      "likeCount": 0
+  },
+  {
+      "one": "FFEBEE",
+      "two": "FFCDD2",
+      "three": "EF9A9A",
+      "four": "E57373",
+      "pallete_type": "Popular",
+      "likeCount": 0
+  },
+  {
+      "one": "E3F2FD",
+      "two": "BBDEFB",
+      "three": "90CAF9",
+      "four": "64B5F6",
+      "pallete_type": "Popular",
+      "likeCount": 0
+  },
+  {
+      "one": "FFF3E0",
+      "two": "FFE0B2",
+      "three": "FFCC80",
+      "four": "FFB74D",
+      "pallete_type": "Popular",
+      "likeCount": 0
+  },
+  {
+      "one": "F3E5F5",
+      "two": "E1BEE7",
+      "three": "CE93D8",
+      "four": "BA68C8",
+      "pallete_type": "Popular",
+      "likeCount": 0
+  },
+  {
+      "one": "EDE7F6",
+      "two": "D1C4E9",
+      "three": "B39DDB",
+      "four": "9575CD",
+      "pallete_type": "Popular",
+      "likeCount": 0
+  },
+  {
+      "one": "E0F7FA",
+      "two": "B2EBF2",
+      "three": "80DEEA",
+      "four": "4DD0E1",
+      "pallete_type": "Popular",
+      "likeCount": 0
+  },
+  {
+      "one": "FFF8E1",
+      "two": "FFECB3",
+      "three": "FFE082",
+      "four": "FFD54F",
+      "pallete_type": "Popular",
+      "likeCount": 0
+  },
+  {
+      "one": "E8EAF6",
+      "two": "C5CAE9",
+      "three": "9FA8DA",
+      "four": "7986CB",
+      "pallete_type": "Popular",
+      "likeCount": 0
+  },
+  {
+      "one": "FFEBEE",
+      "two": "FFCDD2",
+      "three": "EF9A9A",
+      "four": "E57373",
+      "pallete_type": "Popular",
+      "likeCount": 0
   }
 ]

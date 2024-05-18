@@ -1,14 +1,16 @@
-import { Card } from "@/lib/database/models/card";
-import { connectToDatabase } from "@/lib/database/mongoose";
+
+import { MongoClient } from "mongodb";
 import { NextResponse } from "next/server";
 
 const colorPallete = true;
+const dbName = 'color-pallete-prod'
 
 export async function GET(req: Request) {
   try {
-    await connectToDatabase();
+    const client = await MongoClient.connect(process.env.MONGODB_URL!);
+    const db = client.db(dbName);
     if (colorPallete) {
-      const result = await Card.find({ type: "popular" });
+      const result = await db.collection('search_colors').find({ pallete_type: "Popular" }).toArray();
 
       if (!result) {
         return NextResponse.json(
