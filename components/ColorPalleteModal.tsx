@@ -2,8 +2,12 @@
 
 import { useEffect, useRef, useState } from "react";
 import { Button } from "./ui/button";
+import { motion } from "framer-motion";
 import { CopyIcon, Download, Heart } from "lucide-react";
 import toast from "react-hot-toast";
+import { useLikeMutation } from "@/hooks/useLikeMutation";
+import { useLikeCount } from "@/hooks/useLikeCount";
+import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 
 interface Color {
   hex: string;
@@ -22,28 +26,16 @@ const ColorPalleteModal: React.FC<ColorPaletteImageProps> = ({
   cardId,
 }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const [likeCount, setLikeCount] = useState(initialLikeCount);
-  const [likes, setLike] = useState(false);
+  const [likes, setLikes] = useState(false);
+  const likeButton = useLikeMutation(cardId);
+  const { data, error, isLoading } = useLikeCount(cardId);
+  const likeCountss = data?.likeCount || 0;
 
   useEffect(() => {
-    const fetchLikeCount = async () => {
-      try {
-        const response = await fetch(`/api/cards/${cardId}/like`, {
-          method: "GET",
-        });
-        if (response.ok) {
-          const data = await response.json();
-          setLikeCount(data.likeCount);
-        } else {
-          toast.error("Failed to fetch like count");
-        }
-      } catch (error) {
-        toast.error("An error occurred while fetching the like count");
-      }
-    };
-
-    fetchLikeCount();
-  }, [cardId]);
+    if (error) {
+      toast.error("Failed to fetch like count");
+    }
+  }, [error]);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -117,24 +109,15 @@ const ColorPalleteModal: React.FC<ColorPaletteImageProps> = ({
 
   const handleLike = async () => {
     try {
-      const response = await fetch(`/api/cards/${cardId}/like`, {
-        method: "POST",
-      });
-
-      if (response.ok) {
-        const data = await response.json();
-        setLike(true);
-        setLikeCount(data.likeCount);
-        toast.success("Liked!");
-      } else {
-        toast.error("Failed to like the palette");
-      }
+      setLikes(true);
+      await likeButton.mutateAsync();
+      setTimeout(() => {
+        setLikes(false);
+      }, 200);
     } catch (error) {
       toast.error("An error occurred while liking the palette");
     }
   };
-
-  const like = likes ? "fill-red-600" : "";
 
   return (
     <div className="flex flex-col">
@@ -155,9 +138,16 @@ const ColorPalleteModal: React.FC<ColorPaletteImageProps> = ({
         >
           <CopyIcon className="mr-2 h-4 w-4" /> Copy Palette
         </Button>
-        <Button onClick={handleLike} variant="secondary" className="">
-          <Heart className={`mr-2 h-4 w-4 ${like}`} /> {likeCount}
-        </Button>
+        <motion.div whileTap={{ scale: 1.2 }}>
+          <Button onClick={handleLike} variant="secondary" className="">
+            {likes ? (
+              <AiFillHeart className="mr-2 h-4 w-4 text-red-500" />
+            ) : (
+              <AiOutlineHeart className="mr-2 h-4 w-4 text-gray-500" />
+            )}
+            {isLoading ? "..." : likeCountss}
+          </Button>
+        </motion.div>
         <Button onClick={downloadImage} variant="secondary" className="">
           <Download className="mr-2 h-4 w-4" /> Image
         </Button>

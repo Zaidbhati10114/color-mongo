@@ -8,6 +8,7 @@ import MarginWidthWrapper from "./components/margin-width-wrapper";
 import Header from "./components/header";
 import HeaderMobile from "./components/header-mobile";
 import PageWrapper from "./components/page-wrapper";
+import TanstackProvider from "@/providers/TanstackProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 let title = "Color Pallets";
@@ -37,7 +38,9 @@ export default function RootLayout({
             <MarginWidthWrapper>
               <Header />
               <HeaderMobile />
-              <PageWrapper>{children}</PageWrapper>
+              <PageWrapper>
+                <TanstackProvider>{children}</TanstackProvider>
+              </PageWrapper>
             </MarginWidthWrapper>
           </main>
         </div>
